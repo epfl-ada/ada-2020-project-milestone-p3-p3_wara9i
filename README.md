@@ -115,7 +115,7 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 
 - Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities
 
-- We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? 
+- We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? (i.e do you think we shouldn't make the simplification of discarding the weight keeping only the sign for each edge between communities?
 
 THANKS :) 
 
