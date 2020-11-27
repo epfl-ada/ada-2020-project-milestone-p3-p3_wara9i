@@ -79,27 +79,44 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 	- Downloading of the dataset.
 	- Perform some data wragling.
 	- Compute average signs to build the weighted network.
+	- Search for other methods that embodies the theory of status and theory of balance for weighted networks.
 
 - **Week 2**:
 	- Implement the naive ordinary signed network (using only the sign of the weight).
-	- Search for other methods that deal with signed networks.
 	- Reproduce the key results/tables of the paper.
 	- Start Analysing the similarities and differences of the relations between individuals and those of communities.
+	- Implement (especially if results are inconclusive) other methods that can deal more accuratly with signed networks
+	- Try to transform our initial datasets into network of communities by clustering.
 
 - **Week 3**:
-	- Try to transform our initial datasets into network of communities by clustering.
 	- Continuing with analysis and compare results for reddit communities and the created communities (Epinions, Slashdot, Wikipedia).
 	- preparing the datastory or report.
 
 ## Organization within the team :
 
-Ahmed will handle downloading, merging and enriching the dataset in week 1. The resulting code and datasets will be shared with the other members of the team.
-In week 2 (or earlier if time allows it), James will implement the label propagation algorithm. Different data analysis ideas based on week 1's research can then be divided and tackled separately by each member of the team during week 2 and week 3. In week 3, James will focus on setting up the data story webpage (design, interactive visualizations if needed).
-Mary and John will focus on research during week 1 and divide this workload among themselves, so that week 2 can be started with a solid plan. Different data analysis ideas based on week 1's research can then be divided and tackled separately by each member of the team during week 2 and week 3.
-In week 3, Mary will focus on writing the data story and preparing all needed figures and examples.
 
+**Week1** : 
+	Ahmed will handle downloading the dataset and perform data wragling. He will build the weighted network and share the resulting code and datasets with the other members of the team.
+	Salim and Ghassen will both de the research to find methods that can be implemented to deal with signed weighted networks
 
-In week 3, John will focus on preparing the short video with the main ideas, and will help Mary and John with figures/examples and interactive visualizations as some of this may be used both in the data story and video.
+**week 2** (or earlier if time allows it):
+	Ghassen will implement the naive ordinary signed network using only the sign of the weights.
+	Reproducing the key results and tables of the paper will be divided and tackled seperately by each member of the team.
+	We will then analyse the results and compare the similarities and differences and decide on whether we will implement other methods to deal with weighted signed networks (and which ones ?). Salim and Ahmed will implement them.
+	Ghassen will try and transform our initial datasets into network of communities by clusterting
+
+**week 3**:
+	Salim and Ahmed will both analyse and compare the created communities with the reddit communities and prepare all needd figures and exemple while writing the data story
+	Ghassen will focus on setting up the data story webpage (design, interactive visualizations if needed)
+	The whole team will prepare the video presentation
 
 
 ## Questions for TAs :
+
+- Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities
+
+- We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? 
+
+THANKS :) 
+
+
