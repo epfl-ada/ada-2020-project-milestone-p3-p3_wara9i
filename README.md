@@ -75,6 +75,31 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 
 ## Proposed timeline :
 
+- **Week 1**: 
+	- Downloading of the dataset.
+	- Perform some data wragling.
+	- Compute average signs to build the weighted network.
+
+- **Week 2**:
+	- Implement the naive ordinary signed network (using only the sign of the weight).
+	- Search for other methods that deal with signed networks.
+	- Reproduce the key results/tables of the paper.
+	- Start Analysing the similarities and differences of the relations between individuals and those of communities.
+
+- **Week 3**:
+	- Try to transform our initial datasets into network of communities by clustering.
+	- Continuing with analysis and compare results for reddit communities and the created communities (Epinions, Slashdot, Wikipedia).
+	- preparing the datastory or report.
+
 ## Organization within the team :
+
+Ahmed will handle downloading, merging and enriching the dataset in week 1. The resulting code and datasets will be shared with the other members of the team.
+In week 2 (or earlier if time allows it), James will implement the label propagation algorithm. Different data analysis ideas based on week 1's research can then be divided and tackled separately by each member of the team during week 2 and week 3. In week 3, James will focus on setting up the data story webpage (design, interactive visualizations if needed).
+Mary and John will focus on research during week 1 and divide this workload among themselves, so that week 2 can be started with a solid plan. Different data analysis ideas based on week 1's research can then be divided and tackled separately by each member of the team during week 2 and week 3.
+In week 3, Mary will focus on writing the data story and preparing all needed figures and examples.
+
+
+In week 3, John will focus on preparing the short video with the main ideas, and will help Mary and John with figures/examples and interactive visualizations as some of this may be used both in the data story and video.
+
 
 ## Questions for TAs :
