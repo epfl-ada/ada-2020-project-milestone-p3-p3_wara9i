@@ -75,6 +75,48 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 
 ## Proposed timeline :
 
+- **Week 1**: 
+	- Downloading of the dataset.
+	- Perform some data wragling.
+	- Compute average signs to build the weighted network.
+	- Search for other methods that embodies the theory of status and theory of balance for weighted networks.
+
+- **Week 2**:
+	- Implement the naive ordinary signed network (using only the sign of the weight).
+	- Reproduce the key results/tables of the paper.
+	- Start Analysing the similarities and differences of the relations between individuals and those of communities.
+	- Implement (especially if results are inconclusive) other methods that can deal more accuratly with signed networks
+	- Try to transform our initial datasets into network of communities by clustering.
+
+- **Week 3**:
+	- Continuing with analysis and compare results for reddit communities and the created communities (Epinions, Slashdot, Wikipedia).
+	- preparing the datastory or report.
+
 ## Organization within the team :
 
+
+**Week1** : 
+	Ahmed will handle downloading the dataset and perform data wragling. He will build the weighted network and share the resulting code and datasets with the other members of the team.
+	Salim and Ghassen will both de the research to find methods that can be implemented to deal with signed weighted networks
+
+**week 2** (or earlier if time allows it):
+	Ghassen will implement the naive ordinary signed network using only the sign of the weights.
+	Reproducing the key results and tables of the paper will be divided and tackled seperately by each member of the team.
+	We will then analyse the results and compare the similarities and differences and decide on whether we will implement other methods to deal with weighted signed networks (and which ones ?). Salim and Ahmed will implement them.
+	Ghassen will try and transform our initial datasets into network of communities by clusterting
+
+**week 3**:
+	Salim and Ahmed will both analyse and compare the created communities with the reddit communities and prepare all needd figures and exemple while writing the data story
+	Ghassen will focus on setting up the data story webpage (design, interactive visualizations if needed)
+	The whole team will prepare the video presentation
+
+
 ## Questions for TAs :
+
+- Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities
+
+- We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? (i.e do you think we shouldn't make the simplification of discarding the weight keeping only the sign for each edge between communities?
+
+THANKS :) 
+
+
