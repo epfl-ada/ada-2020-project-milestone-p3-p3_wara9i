@@ -190,5 +190,7 @@ We showed that in Reddit dataset the pourcentage of negative edges that originat
 #### Data : 
 S. Kumar, W.L. Hamilton, J. Leskovec, D. Jurafsky. Community Interaction and Conflict on the Web. World Wide Web Conference, 2018.
 
+####Status group :
+https://en.wikipedia.org/wiki/Status_group
 
 
