@@ -163,23 +163,26 @@ We showed that in Reddit dataset the pourcentage of negative edges that originat
 ## Workload partition :
 
 
-AHMED :	- Load, clean and create graph for Reddit dataset
+- **AHMED** :
+	- Load, clean and create graph for Reddit dataset
 	- Try several methods to deal with multiple edges (between same two nodes)
 	- Analysing Reddit dataset, interactions between subreddits, Friendships and conflicts. 
 	- Trying to transform original data of individuals (Epinions, Wikipedia ans slashdot) to communities (failed to do so, we dropped this part)
 
 
-Ghassen:- replication of figure 2 from the paper, applying it to reddit
+- **GHASSEN**:
+	- replication of figure 2 from the paper, applying it to reddit
 	- Visualisations of wikipedia and reddit graphs in Time (DEMO)
 	- Visualisation of nodes from the graph (PICKER)
+	-
 
 
-Analysis of Balance Status theory: Comparing results from the paper with the ones of Reddit dataset. Zrouga
+- **SALIM**:
+	- Analysis of Balance Status theory: Comparing results from the paper with the ones of Reddit dataset.
+	- Writing text for datastory, important information and conclusions
+	- Prepare images of results
+	- 
 
-Preparing text for datastory, important information and conclusions (zrouga)
-Prepare images of results (zrouga)
-
- AHMED
 
 
 ## SOURCES :
