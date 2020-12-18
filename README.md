@@ -148,7 +148,7 @@ The data contains 40 months of Reddit comments and posts
 
 ==> We can therefore say that a **positive** link from A to B means that A **agrees/respects** B's ideas/lifestyle , and a **negative link** from A to B means that A **disagrees/disrespects** B's ideas/lifestyle.
 
-Our replication of Figure 2 of Signed networks paper for Epinions dataset didn't match the one in the paper, but the deductions and informations that the figures gives us remain the same. But for Reddit dataset , we found that the predictions of status with respect to both generative and receptive surprise perform the same way as the predictions of structural balance.
+Our **replication of Figure 2** of Signed networks paper for Epinions dataset didn't match the one in the paper, but the deductions and informations that the figures gives us remain the same. But for Reddit dataset , we found that the predictions of status with respect to both generative and receptive surprise perform the same way as the predictions of structural balance.
 
 We need to state, as mentioned in the notebook, to deal with multiple weighted edges between same two nodes in Reddit dataset, we implemented two methods: One takes into account every edge and create a **MultiDirGraph**, whilst the other assign a single edge with a computed **mean of all weights** between those two nodes. 
 
