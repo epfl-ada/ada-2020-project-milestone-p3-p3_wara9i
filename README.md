@@ -110,13 +110,49 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 	Ghassen will focus on setting up the data story webpage (design, interactive visualizations if needed)
 	The whole team will prepare the video presentation
 
-
 ## Questions for TAs :
 
-- Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities
-
-- We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? (i.e do you think we shouldn't make the simplification of discarding the weight keeping only the sign for each edge between communities?
-
-THANKS :) 
+Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities.
+--Response: * Well, it is a bit tricky! Other teams have asked me the same question. Following is what I think should be the best way to proceed:
+"You guys can discuss work specific to replicate Table 3, but, then code this part yourself individually. There is a high likelihood, if you don't discuss during implementation, it would come out quite differently. I know that it is sort of an overkill and a waste of time, but this is how it is. Replication of Table 3 is an individual task, and you can see that we take copying quite seriously. A note was sent to all the students, for whom, we found the P2 assignment to be similar. Hope you find an efficient way to work things out! Feel free to reach out again if you need further clarifications."
 
 
+We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? (i.e do you think we shouldn't make the simplification of discarding the weight keeping only the sign for each edge between communities?
+--Response: * It is very hard to judge analytically whether the naive method would work or not. This is something that you will have to try!
+
+THANKS :)
+
+
+## Reasoning
+
+**Subreddit Hyperlink Network**: the subreddit-to-subreddit hyperlink network is extracted from the posts that create hyperlinks from one subreddit to another. We say a hyperlink originates from a post in the source community and links to a post in the target community.
+
+Note that each post has a **title** and a **body**. The hyperlink can be present in **either the title** of the post or **in the body**. Therefore, we provide one network file for each.
+
+The first step will be to concatenate those two datasets and provide w full dataset containing all directed and signed connexions between subreddits
+
+The data contains 40 months of Reddit comments and posts
+
+
+**BALANCE THEORY** :
+
+- Considers the possible ways in which triangles on three individuals can be signed.
+- it posits that triangles with **three positive signs** (3 mutual friends), and those with **one positive sign** (2 friends with common enemy) are more plausible (more prelevent) than triangles with **two positive signs** (2 enemies with common friend) or **none** (mutual enemies)
+
+
+**STATUS THEORY** :
+
+- We need to define our proper way of formulating the status theory. Given the low pourcentage of negative links (10% in all the links) we can say that a negative link from community A to community B may mean that community B is my enemy / wrong  and a positive link from A to B may be I get along well with community B
+
+Max Weber developed the idea of "status group" which is a translation of the German Stand (pl. Stände). Status groups are communities that are based on ideas of lifestyles and the honor the status group both asserts, and is given by others. Status groups exist in the context of beliefs about relative prestige, privilege, and honor and can be of both a positive and negative sort.
+
+We can therefore say that a positive link from A to B means that A agrees/respect B's ideas/lifestyle , and a negative link from A to B means that A disagrees/disrespect B's ideas/lifestyle.
+
+Our replication of Figure 2 of Signed networks paper for Epinions dataset didn't match the one in the paper, but the deductions and informations that the figures gives us remain the same. But for Reddit dataset , we found that the predictions of status with respect to both generative and receptive surprise perform the same way as the predictions of structural balance.
+
+We need to state, as mentioned in the notebook, to deal with multiple weighted edges between same two nodes in Reddit dataset, we implemented two methods: One takes into account every edge and create a MultiDirGraph, whilst the other assign a single edge with a computed mean of all weights between those two nodes. 
+
+Even by using the **mean as weight**, we saw that the mean sign of the edges is by majority **1 or -1** .
+From this, we decided to define "FRIENDS Communities" by the communities from which originated multiple (ie : >=2) positive edges. and "ENEMIES communities" by the communities from which originated (ie : >=2) negative edges.
+
+We showed that in Reddit dataset the pourcentage of negative edges that originated from the set of SOURCE subreddits that led to more than 2 conflicts are at **57.6%** responsible of all negative links. And that **76.2%** of the "ENEMIES Communities" are responsible for **ALL negative links** in Reddit dataset.
