@@ -144,18 +144,18 @@ The data contains 40 months of Reddit comments and posts
 
 - We need to define our proper way of formulating the status theory. Given the low pourcentage of negative links (10% in all the links) we can say that a negative link from community A to community B may mean that community B is my enemy / wrong  and a positive link from A to B may be I get along well with community B
 
-Max Weber developed the idea of "status group" which is a translation of the German Stand (pl. Stände). Status groups are communities that are based on ideas of lifestyles and the honor the status group both asserts, and is given by others. Status groups exist in the context of beliefs about relative prestige, privilege, and honor and can be of both a positive and negative sort.
+Max Weber developed the idea of **"status group"** which is a translation of the German Stand (pl. Stände). Status groups are communities that are based on ideas of lifestyles and the honor the status group both asserts, and is given by others. Status groups exist in the context of beliefs about relative prestige, privilege, and honor and can be of both a positive and negative sort.
 
-We can therefore say that a positive link from A to B means that A agrees/respect B's ideas/lifestyle , and a negative link from A to B means that A disagrees/disrespect B's ideas/lifestyle.
+We can therefore say that a **positive** link from A to B means that A **agrees/respects** B's ideas/lifestyle , and a **negative link** from A to B means that A **disagrees/disrespects** B's ideas/lifestyle.
 
 Our replication of Figure 2 of Signed networks paper for Epinions dataset didn't match the one in the paper, but the deductions and informations that the figures gives us remain the same. But for Reddit dataset , we found that the predictions of status with respect to both generative and receptive surprise perform the same way as the predictions of structural balance.
 
-We need to state, as mentioned in the notebook, to deal with multiple weighted edges between same two nodes in Reddit dataset, we implemented two methods: One takes into account every edge and create a MultiDirGraph, whilst the other assign a single edge with a computed mean of all weights between those two nodes. 
+We need to state, as mentioned in the notebook, to deal with multiple weighted edges between same two nodes in Reddit dataset, we implemented two methods: One takes into account every edge and create a **MultiDirGraph**, whilst the other assign a single edge with a computed **mean of all weights** between those two nodes. 
 
 Even by using the **mean as weight**, we saw that the mean sign of the edges is by majority **1 or -1** .
-From this, we decided to define "FRIENDS Communities" by the communities from which originated multiple (ie : >=2) positive edges. and "ENEMIES communities" by the communities from which originated (ie : >=2) negative edges.
+From this, we decided to define **"FRIENDS Communities"** by the communities from which originated multiple (ie : >=3) positive edges. and **"ENEMIES communities"** by the communities from which originated (ie : >=3) negative edges.
 
-We saw that there are some subreddits, like **mongolianhatewatch**, that are involved only in Negative links. Generally, we saw that those negative links are generated in a short amount of time. This may inform us of a possible dispute between the subreddits, or a hatred accounts.
+We saw that there are some subreddits, like **mongolianhatewatch**, that are involved only in **negative links**. Generally, we saw that those negative links are generated in a short amount of time. This may inform us of a possible dispute between the subreddits, or a hatred accounts.
 
 We showed that in Reddit dataset the pourcentage of negative edges that originated from the set of SOURCE subreddits that led to more than 2 conflicts are at **57.6%** responsible of all negative links. And that **76.2%** of the "ENEMIES Communities" are responsible for **ALL negative links** in Reddit dataset.
 
