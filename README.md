@@ -163,11 +163,15 @@ We showed that in Reddit dataset the pourcentage of negative edges that originat
 ## Workload partition :
 
 
-Load, clean and create graph for Reddit dataset
-Try several methods to deal with multiple edges (between same two nodes)
-Analysing Reddit dataset, interactions between subreddits, Friendships and conflicts. AHMED
+AHMED :	- Load, clean and create graph for Reddit dataset
+	- Try several methods to deal with multiple edges (between same two nodes)
+	- Analysing Reddit dataset, interactions between subreddits, Friendships and conflicts. 
+	- Trying to transform original data of individuals (Epinions, Wikipedia ans slashdot) to communities (failed to do so, we dropped this part)
 
-replication of figure 2 from the paper, applying it to reddit GHASSEN
+
+Ghassen:- replication of figure 2 from the paper, applying it to reddit
+	- Visualisations of wikipedia and reddit graphs in Time (DEMO)
+	- Visualisation of nodes from the graph (PICKER)
 
 
 Analysis of Balance Status theory: Comparing results from the paper with the ones of Reddit dataset. Zrouga
@@ -175,28 +179,13 @@ Analysis of Balance Status theory: Comparing results from the paper with the one
 Preparing text for datastory, important information and conclusions (zrouga)
 Prepare images of results (zrouga)
 
-Trying to transform original data of individuals (Epinions, Wikipedia ans slashdot) to communities (failed to do so, we dropped this part) AHMED
-
-Visualisations of wikipedia and reddit graphs in Time Ghassen
-
-Visualisation of nodes from the graph ?? (ghassen)
+ AHMED
 
 
 ## SOURCES :
 
 #### Data : 
 S. Kumar, W.L. Hamilton, J. Leskovec, D. Jurafsky. Community Interaction and Conflict on the Web. World Wide Web Conference, 2018.
-(BibTex Citation:
-@inproceedings{kumar2018community,
-  title={Community interaction and conflict on the web},
-  author={Kumar, Srijan and Hamilton, William L and Leskovec, Jure and Jurafsky, Dan},
-  booktitle={Proceedings of the 2018 World Wide Web Conference on World Wide Web},
-  pages={933--943},
-  year={2018},
-  organization={International World Wide Web Conferences Steering Committee}
-}
-)
-
 
 
 
