@@ -113,14 +113,13 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 ## Questions for TAs :
 
 Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities.
---Response: * Well, it is a bit tricky! Other teams have asked me the same question. Following is what I think should be the best way to proceed:
+	--Response: * Well, it is a bit tricky! Other teams have asked me the same question. Following is what I think should be the best way to proceed:
 "You guys can discuss work specific to replicate Table 3, but, then code this part yourself individually. There is a high likelihood, if you don't discuss during implementation, it would come out quite differently. I know that it is sort of an overkill and a waste of time, but this is how it is. Replication of Table 3 is an individual task, and you can see that we take copying quite seriously. A note was sent to all the students, for whom, we found the P2 assignment to be similar. Hope you find an efficient way to work things out! Feel free to reach out again if you need further clarifications."
 
 
 We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? (i.e do you think we shouldn't make the simplification of discarding the weight keeping only the sign for each edge between communities?
---Response: * It is very hard to judge analytically whether the naive method would work or not. This is something that you will have to try!
+	--Response: * It is very hard to judge analytically whether the naive method would work or not. This is something that you will have to try!
 
-THANKS :)
 
 
 ## Reasoning
