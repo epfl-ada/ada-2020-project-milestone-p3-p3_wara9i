@@ -114,8 +114,7 @@ And if time permits, we will try to transform our individuals networks (i.e Epin
 
 Since as an individual work for Milestone4, each team member will have to reproduce Table 3, we wanted to ask if it'll be a problem since we will also have to do it as a team to show and analyse the results for the reddit communities:
 
-	--Response: * Well, it is a bit tricky! Other teams have asked me the same question. Following is what I think should be the best way to proceed:
-"You guys can discuss work specific to replicate Table 3, but, then code this part yourself individually. There is a high likelihood, if you don't discuss during implementation, it would come out quite differently. I know that it is sort of an overkill and a waste of time, but this is how it is. Replication of Table 3 is an individual task, and you can see that we take copying quite seriously. A note was sent to all the students, for whom, we found the P2 assignment to be similar. Hope you find an efficient way to work things out! Feel free to reach out again if you need further clarifications."
+	--Response: * Well, it is a bit tricky! Other teams have asked me the same question. Following is what I think should be the best way to proceed: "You guys can discuss work specific to replicate Table 3, but, then code this part yourself individually. There is a high likelihood, if you don't discuss during implementation, it would come out quite differently. I know that it is sort of an overkill and a waste of time, but this is how it is. Replication of Table 3 is an individual task, and you can see that we take copying quite seriously. A note was sent to all the students, for whom, we found the P2 assignment to be similar. Hope you find an efficient way to work things out! Feel free to reach out again if you need further clarifications."
 
 
 We also wanted to ask if you think that the naive method (the one that takes into account only the sign) could alter the results and be inconclusive ? (i.e do you think we shouldn't make the simplification of discarding the weight keeping only the sign for each edge between communities? :
@@ -124,7 +123,7 @@ We also wanted to ask if you think that the naive method (the one that takes int
 
 
 
-## Reasoning
+## Reasoning and Results
 
 **Subreddit Hyperlink Network**: the subreddit-to-subreddit hyperlink network is extracted from the posts that create hyperlinks from one subreddit to another. We say a hyperlink originates from a post in the source community and links to a post in the target community.
 
@@ -156,4 +155,48 @@ We need to state, as mentioned in the notebook, to deal with multiple weighted e
 Even by using the **mean as weight**, we saw that the mean sign of the edges is by majority **1 or -1** .
 From this, we decided to define "FRIENDS Communities" by the communities from which originated multiple (ie : >=2) positive edges. and "ENEMIES communities" by the communities from which originated (ie : >=2) negative edges.
 
+We saw that there are some subreddits, like **mongolianhatewatch**, that are involved only in Negative links. Generally, we saw that those negative links are generated in a short amount of time. This may inform us of a possible dispute between the subreddits, or a hatred accounts.
+
 We showed that in Reddit dataset the pourcentage of negative edges that originated from the set of SOURCE subreddits that led to more than 2 conflicts are at **57.6%** responsible of all negative links. And that **76.2%** of the "ENEMIES Communities" are responsible for **ALL negative links** in Reddit dataset.
+
+
+## Workload partition :
+
+
+Load, clean and create graph for Reddit dataset
+Try several methods to deal with multiple edges (between same two nodes)
+Analysing Reddit dataset, interactions between subreddits, Friendships and conflicts. AHMED
+
+replication of figure 2 from the paper, applying it to reddit GHASSEN
+
+
+Analysis of Balance Status theory: Comparing results from the paper with the ones of Reddit dataset. Zrouga
+
+Preparing text for datastory, important information and conclusions (zrouga)
+Prepare images of results (zrouga)
+
+Trying to transform original data of individuals (Epinions, Wikipedia ans slashdot) to communities (failed to do so, we dropped this part) AHMED
+
+Visualisations of wikipedia and reddit graphs in Time Ghassen
+
+Visualisation of nodes from the graph ?? (ghassen)
+
+
+## SOURCES :
+
+#### Data : 
+S. Kumar, W.L. Hamilton, J. Leskovec, D. Jurafsky. Community Interaction and Conflict on the Web. World Wide Web Conference, 2018.
+(BibTex Citation:
+@inproceedings{kumar2018community,
+  title={Community interaction and conflict on the web},
+  author={Kumar, Srijan and Hamilton, William L and Leskovec, Jure and Jurafsky, Dan},
+  booktitle={Proceedings of the 2018 World Wide Web Conference on World Wide Web},
+  pages={933--943},
+  year={2018},
+  organization={International World Wide Web Conferences Steering Committee}
+}
+)
+
+
+
+
